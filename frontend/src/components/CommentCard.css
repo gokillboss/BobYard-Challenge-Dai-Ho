@@ -1,0 +1,57 @@
+.comment-card {
+    margin-bottom: 1.5rem;
+  }
+  
+  .comment-avatar {
+    display: block;
+  }
+  
+  .comment-header {
+    font-size: 0.9rem;
+  }
+  
+  .comment-text {
+    font-size: 0.95rem;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+  }
+  
+  .comment-actions {
+    font-size: 0.85rem;
+  }
+  
+  /* Style the reaction buttons */
+  .reaction-btn {
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+  
+  .reaction-btn:hover {
+    color: #606060 !important;
+  }
+  
+  /* Style the reply button */
+  .reply-btn {
+    text-decoration: none;
+    font-size: 0.85rem;
+    transition: color 0.2s;
+  }
+  
+  .reply-btn:hover {
+    color: #606060 !important;
+  }
+  
+  /* For admin actions */
+  .admin-actions {
+    opacity: 0;
+    transition: opacity 0.2s;
+  }
+  
+  .comment-card:hover .admin-actions {
+    opacity: 1;
+  }
+  
+  /* Spacing for the comment date */
+  .text-muted {
+    font-size: 0.85rem;
+  }
