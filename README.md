@@ -49,6 +49,9 @@ mysql -u root -p
 CREATE DATABASE bobyard_db;
 
 1. Navigate to the database folder:
+```bash
+cd database
+
 ```sql
 mysql -u root -p bobyard_db < insert_comments.sql
 
