@@ -47,7 +47,10 @@ mysql -u root -p
 
 ```sql
 CREATE DATABASE bobyard_db;
-```
+
+1. Navigate to the database folder:
+```sql
+mysql -u root -p bobyard_db < insert_comments.sql
 
 Use the same DB name, user and password in `.env` file.
 
@@ -72,7 +75,6 @@ Use the same DB name, user and password in `.env` file.
    DB_PORT=3306
    PORT=8000
    ```
-
 4. Start server:
    ```bash
    npm run dev
@@ -108,9 +110,6 @@ App will run at `http://localhost:3000`
 | PUT | `/api/comments/:id` | Edit a comment (optional) |
 | DELETE | `/api/comments/:id` | Delete a comment |
 
-## 🖼️ Screenshot
-
-*(Add a screenshot here if needed)*
 
 ## 🧠 Notes
 
