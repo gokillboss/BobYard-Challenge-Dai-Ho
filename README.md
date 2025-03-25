@@ -114,5 +114,7 @@ App will run at `http://localhost:3000`
 ## 🧠 Notes
 
 * All comments are posted as "Admin".
+* Hit the Like is count from Admin
 * Backend supports full CRUD. UI currently supports Add + Delete.
 * Sorting by "Newest" or "Top" (likes).
+
