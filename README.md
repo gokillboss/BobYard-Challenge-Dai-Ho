@@ -20,6 +20,16 @@ This is a full-stack comment system built for the Bobyard Fullstack (Backend-foc
 
 ---
 
+Prerequisites
+### Prerequisites
+- Node 
+- Python
+- MySQL Server
+- pip (Python package manager)
+- npm
+
+
+
 ## 🐬 MySQL Setup (Local)
 
 ### 1. Install MySQL
@@ -41,20 +51,24 @@ This is a full-stack comment system built for the Bobyard Fullstack (Backend-foc
 
 ### 2. Create database
 
-```bash
-mysql -u root -p
-```
+    ``bash
+    mysql -u root -p
+    ```
 
-```sql
-CREATE DATABASE bobyard_db;
-
+    ```sql
+    CREATE DATABASE bobyard_db;
+    ```
 1. Navigate to the database folder:
-```sql
-mysql -u root -p bobyard_db < insert_comments.sql
+    ```bash
+    cd database
+    ```
+2.  insert data
+    ```bash
+    mysql -u root -p bobyard_db < insert_comments.sql
+    ```
+Use the same DB name, user and password in `.env` file
 
-Use the same DB name, user and password in `.env` file.
-
-## 📦 Backend Setup
+## 📦 Backend Setup (Node , Express)
 
 1. Navigate to the backend folder:
    ```bash
@@ -81,6 +95,76 @@ Use the same DB name, user and password in `.env` file.
    ```
 
 Server should run at `http://localhost:8000`
+
+
+## 📦 Backend Setup (Python Django)
+1. Navigate to the backend folder:
+    ```bash
+    cd backend-django
+    ```
+2. Create Virtual Environment
+
+    ```bash
+    python -m venv env
+    ```
+3. Activate Environment
+
+    On Windows:
+    ```bash
+    env\Scripts\activate
+    ```
+
+    On macOS/Linux:
+    ```bash
+    source env/bin/activate
+    ```
+
+4. Install Requirements
+
+    ```bash
+    pip install -r requirements.txt
+    ```
+
+    Required packages:
+    - django
+    - djangorestframework
+    - mysqlclient
+    - django-cors-headers
+    - python-decouple
+    - django-extensions
+    - django-mysql
+
+    > 💡 **Note for Windows users:** You may need to install MySQL Connector/C separately.
+
+## Configuration
+
+### 1. Environment Setup
+
+Create a `.env` file in your project root:
+
+    ```
+    DB_NAME=bopyard_db
+    DB_USER=root
+    DB_PASSWORD=yourpassword
+    DB_HOST=localhost
+    DB_PORT=3306
+    ```
+### 2. Database Migrations
+
+    ```bash
+    python manage.py makemigrations
+    python manage.py migrate
+    ```
+
+#### 3. Run Development Server
+
+    ```bash
+    python manage.py runserver
+    ```
+
+Access the API at: http://127.0.0.1:8000/api/
+
+
 
 ## 💻 Frontend Setup
 
