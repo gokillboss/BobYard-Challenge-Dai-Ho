@@ -1,0 +1,7 @@
+django
+djangorestframework
+mysqlclient
+django-cors-headers
+python-decouple
+django-extensions
+django-mysql
