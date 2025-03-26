@@ -5,7 +5,7 @@ This is a full-stack comment system built for the Bobyard Fullstack (Backend-foc
 ## 🛠️ Tech Stack
 
 - **Frontend**: React, React Bootstrap, Axios
-- **Backend**: Express.js, Sequelize ORM
+- **Backend**: Express.js, Sequelize ORM, Django
 - **Database**: MySQL
 
 ---
@@ -16,7 +16,7 @@ This is a full-stack comment system built for the Bobyard Fullstack (Backend-foc
 - ✅ Add new comment (Admin)
 - ✅ Delete comment
 - ✅ Sort by newest or top-liked
-- ⏳ Edit comment (backend ready, UI to be added)
+- ✅ Edit comment
 
 ---
 
@@ -70,7 +70,7 @@ Prerequisites
 Use the same DB name, user and password in `.env` file
 
 
-## 📦 Backend Setup (Node , Express)
+### 📦 Backend Setup (Node , Express)
 
 1. Navigate to the backend folder:
    ```bash
@@ -99,7 +99,7 @@ Use the same DB name, user and password in `.env` file
 Server should run at `http://localhost:8000`
 
 
-## 📦 Backend Setup (Python Django)
+### 📦 Backend Setup (Python Django)
 1. Navigate to the backend folder:
     ```bash
     cd backend-django
@@ -168,7 +168,7 @@ Access the API at: http://127.0.0.1:8000/api/
 
 
 
-## 💻 Frontend Setup
+### 💻 Frontend Setup
 
 1. Navigate to the frontend folder:
    ```bash
