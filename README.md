@@ -59,6 +59,7 @@ Prerequisites
     CREATE DATABASE bobyard_db;
     ```
 1. Navigate to the database folder:
+
     ```bash
     cd database
     ```
@@ -67,6 +68,7 @@ Prerequisites
     mysql -u root -p bobyard_db < insert_comments.sql
     ```
 Use the same DB name, user and password in `.env` file
+
 
 ## 📦 Backend Setup (Node , Express)
 
